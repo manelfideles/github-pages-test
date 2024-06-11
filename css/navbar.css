@@ -1,0 +1,46 @@
+nav {
+  padding: 1.25rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  width: 4.5rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0.5rem 1.25rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #202020;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.375rem;
+  width: 0;
+  height: 0.1875rem;
+  background: #e61854;
+  transition: 0.4s;
+}
+
+nav ul li a:hover,
+nav ul li .activepage {
+  color: #e61854;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  color: #e61854;
+  font-weight: bold;
+}

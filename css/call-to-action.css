@@ -1,0 +1,51 @@
+.call-to-action {
+  display: flex;
+  align-items: center;
+  padding: 20% 15% 5% 15%;
+  gap: 5rem;
+}
+
+.call-to-action .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.call-to-action h2 {
+  font-size: 3rem;
+  line-height: 3.25rem;
+  font-family: roboto-mono-bold;
+  margin-bottom: 1.25rem;
+}
+
+.call-to-action p {
+  font-size: 1.25rem;
+  font-family: roboto-mono-light;
+  text-transform: uppercase;
+}
+
+.call-to-action .underline {
+  text-decoration: underline 3px #f5c607;
+}
+
+.call-to-action .buttons-sign-up {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.call-to-action .buttons-sign-up a {
+  margin: 1.25rem 0;
+  border: 1.5px solid #f5c607;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1rem;
+  color: #202020;
+  font-family: roboto-mono-regular;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.call-to-action .buttons-sign-up a:hover {
+  background: #f5c607;
+}

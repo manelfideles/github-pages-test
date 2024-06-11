@@ -1,0 +1,208 @@
+/*-------------------------------------------section 1-------------------------------------------*/
+#activities-section1 {
+  display: flex;
+  gap: 5rem;
+  padding: 5% 10% 10% 10%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#activities-section1 h2 {
+  font-family: roboto-mono-bold;
+  font-size: 46px;
+  line-height: 51px;
+  width: 35%;
+}
+
+#activities-section1 .underline {
+  font-family: roboto-mono-bold;
+  text-decoration: underline 0.22rem #e34511;
+}
+
+/*-------------------------------------------section 2-------------------------------------------*/
+
+#activities-section2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 7rem;
+  padding: 10% 10% 10% 10%;
+}
+
+#activities-section2 h2 {
+  font-family: roboto-mono-bold;
+  font-size: 46px;
+  line-height: 51px;
+  color: #e34511;
+  width: 30%;
+}
+
+#activities-section2 .event-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  width: 70%;
+}
+
+#activities-section2 .event-container .event p {
+  width: 85%;
+}
+
+#activities-section2 .event {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#activities-section2 .event span {
+  font-family: roboto-mono-medium;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #e34511;
+}
+
+#activities-section2 .event p {
+  width: 90%;
+}
+
+#activities-section2 .blue-container {
+  position: relative;
+}
+
+#activities-section2 .blue {
+  position: absolute;
+  left: -20vw;
+  top: -35vh;
+  width: 18.75rem;
+}
+
+/*-------------------------------------------section 3-------------------------------------------*/
+
+#activities-section3 {
+  display: flex;
+  gap: 1rem;
+  padding: 10% 10% 10% 10%;
+}
+
+#activities-section3 .events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: auto;
+  width: 850px;
+  align-items: center;
+}
+
+#activities-section3 .events-container .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+}
+
+#activities-section3 .title {
+  font-family: roboto-mono-regular;
+  font-size: 25px;
+  color: #1e4798;
+}
+
+#activities-section3 .events-container .row .event {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 20% 5% 20% 10%;
+  border: 2px solid #1e4798;
+  border-radius: 10px;
+}
+
+#activities-section3 .events-container .event h5 {
+  font-family: roboto-mono-italic;
+  font-size: 25px;
+  line-height: 30px;
+  color: #e34511;
+  width: 20%;
+}
+
+#activities-section3 .events-container .event h4 {
+  font-family: roboto-mono-regular;
+  font-size: 25px;
+  line-height: 30px;
+  color: #1e4798;
+  width: 90%;
+}
+
+#activities-section3 .button {
+  display: block;
+  margin: 1.25rem 0;
+  width: fit-content;
+  border: 1.5px solid #1e4798;
+  padding: 7px 30px;
+  border-radius: 17px;
+  text-decoration: none;
+  font-family: roboto-mono-regular;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #1e4798;
+  transition: background 0.3s;
+}
+
+#activities-section3 .button:hover {
+  color: #f2f2f2;
+  background: #1e4798;
+}
+
+#activities-section3 #seemore {
+  width: fit-content;
+  border: 1.5px solid #e34511;
+  padding: 8px 25px;
+  border-radius: 17px;
+  text-decoration: none;
+  font-family: roboto-mono-regular;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #e34511;
+  transition: background 0.3s;
+}
+
+#activities-section3 #seemore:hover {
+  background: #e34511;
+  color: #f2f2f2;
+}
+
+#activities-section3 .events-container .more {
+  display: none;
+}
+
+#activities-section3 #seemore.disabled {
+  opacity: 0.3;
+  color: #202020;
+  border: 1.5px solid #202020;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+/*-------------------------------------------section 4-------------------------------------------*/
+
+#activities-section4 {
+  display: flex;
+  padding: 10% 10% 10% 10%;
+  gap: 0.5rem;
+}
+
+#activities-section4 .column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+#activities-section4 .foto {
+  width: 370px;
+  filter: grayscale(100%);
+  transition: filter 0.1s;
+}
+
+#activities-section4 img:hover {
+  filter: grayscale(0%);
+}

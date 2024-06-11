@@ -1,0 +1,123 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 10%;
+}
+
+.carousel .carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10% 10% 0 10%;
+}
+
+.carousel .slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.carousel .slide img {
+  width: 450px;
+}
+
+.carousel .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  width: 420px;
+}
+
+.carousel .content .sentence {
+  width: 80%;
+  color: #e34511;
+  font-family: roboto-mono-light;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.carousel .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.carousel .content .text span {
+  color: #e34511;
+}
+
+.carousel a {
+  padding: 0.5rem 1.25rem;
+  border: 1.5px solid #e34511;
+  border-radius: 1rem;
+  color: #e34511;
+  font-family: roboto-mono-regular;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.carousel a:hover {
+  color: #f2f2f2;
+  background: #e34511;
+}
+
+#prevButton,
+#nextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5%;
+  border: 2px solid #1e4798;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  transition: top 0.5s;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+  background: rgba(30, 71, 152, 0.1);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 0.2rem;
+  border: 1px solid #1e4798;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #1e4798;
+}
+
+.carousel .content .sentence.blue,
+.carousel .content .text span.blue {
+  color: #1e4798;
+}
+
+.carousel .button.blue {
+  border-color: #1e4798;
+  color: #1e4798;
+}
+
+.carousel .button.blue:hover {
+  color: #f2f2f2;
+  background: #1e4798;
+}

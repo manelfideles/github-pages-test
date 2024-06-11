@@ -1,0 +1,97 @@
+/*-------------------------------------section 1-------------------------------------*/
+
+#howto-section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7rem;
+  padding: 10% 15% 10% 15%;
+}
+
+#howto-section1 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+#howto-section1 .content .paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 95%;
+  font-size: 17px;
+}
+
+#howto-section1 .content .paragraph .bold {
+  font-family: roboto-medium;
+}
+
+/*------------------------------------- faqs -------------------------------------*/
+
+.faqs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5rem;
+  padding: 10% 10% 10% 10%;
+}
+
+#topics {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  padding-top: 1%;
+}
+
+#topics button {
+  border: none;
+  background-color: transparent;
+  font-family: roboto-mono-medium;
+  font-size: 35px;
+  color: rgba(0, 0, 200, 0.1);
+  cursor: pointer;
+}
+
+#topics button:hover,
+#topics button.selected {
+  color: rgba(30, 71, 152, 1);
+}
+
+.content {
+  display: none;
+}
+
+.content.selected {
+  display: block;
+}
+
+/*-------------------------------------section 3-------------------------------------*/
+
+#howto-section3 {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 10% 10% 10% 10%;
+}
+
+#howto-section3 .titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+#howto-section3 .titles h2 {
+  font-family: roboto-mono-regular;
+  font-size: 35px;
+  line-height: 40px;
+  width: 60%;
+}
+
+#howto-section3 .titles span {
+  color: #e34511;
+}
+
+form {
+  width: 850px;
+}
