@@ -14,6 +14,28 @@
   <link rel="icon" type="image/x-icon" href="imgs/logo-branco-inspira.png">
 </head>
 
+<script>
+  (function (m, a, z, e) {
+    var s, t;
+    try {
+      t = m.sessionStorage.getItem('maze-us');
+    } catch (err) { }
+
+    if (!t) {
+      t = new Date().getTime();
+      try {
+        m.sessionStorage.setItem('maze-us', t);
+      } catch (err) { }
+    }
+
+    s = a.createElement('script');
+    s.src = z + '?apiKey=' + e;
+    s.async = true;
+    a.getElementsByTagName('head')[0].appendChild(s);
+    m.mazeUniversalSnippetApiKey = e;
+  })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'f0907d3e-f0c7-4f40-88a3-c7807bb11f99');
+</script>
+
 <body>
 
   <!--------------------------------------------- navbar --------------------------------------------->
